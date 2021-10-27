@@ -1,0 +1,10 @@
+*.o
+*.exe
+*.pdf
+*.txt
+*.rc
+*.ico
+*.dll
+x86
+x64
+PolygonTracer
