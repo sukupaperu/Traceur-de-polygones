@@ -104,7 +104,7 @@ void majDessin() {
 
 void keyEvent(unsigned char key, int x, int y) {
 
-	printf("%i %i\n", key, 'H');
+	// printf("%i %i\n", key, 'H');
 
 	switch(key) {
 		case 'h': aideAffichees = !aideAffichees; break;
@@ -247,11 +247,11 @@ int main(int argc, char **argv) {
 		l = atoi(argv[1]);
 		h = atoi(argv[2]);
 		if(l <= 0 || h <= 0) {
-			printf("Usage : %s <largeur> <hauteur>\n", argv[0]);
+			printf("Usage : %s [<largeur> <hauteur>]\n", argv[0]);
 			exit(-1);
 		}
 	} else if(argc > 3 || argc == 2) {
-		printf("Usage : %s <largeur> <hauteur>\n", argv[0]);
+		printf("Usage : %s [<largeur> <hauteur>]\n", argv[0]);
 		exit(-1);
 	}
 
@@ -268,7 +268,7 @@ int main(int argc, char **argv) {
 		glutGet(GLUT_SCREEN_HEIGHT)/2 - zDessin->hauteur/2
 	);
 	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE);
-	glutCreateWindow("Polygon Tracer UwU");
+	glutCreateWindow("Projet FAIN");
 
 	glViewport(0, 0, zDessin->largeur, zDessin->hauteur);
 

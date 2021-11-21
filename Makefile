@@ -5,7 +5,7 @@ CC=gcc
 CFLAGS=-Wall
 LFLAGS=-L/usr/lib -lm -lGL -lglut
 
-EXEC=PolygonTracer
+EXEC=projet
 SRCS=$(wildcard *.c)
 OBJS=$(SRCS:.c=.o)
 
