@@ -12,6 +12,6 @@
 9. Maintien clic gauche sur des sommets (*déplacer les sommets*)
 10. Touche `echap` (*pour fermer le programme*)
 ## Résultats que l'on peut obtenir
-![Premier screenshot](screenshot1.png)
-![Premier screenshot](screenshot2.png)
-![Premier screenshot](screenshot3.png)
+![Premier screenshot](screenshots/screenshot1.png)
+![Premier screenshot](screenshots/screenshot2.png)
+![Premier screenshot](screenshots/screenshot3.png)
