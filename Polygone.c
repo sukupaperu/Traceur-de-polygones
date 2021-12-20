@@ -321,9 +321,8 @@ void remplirPoly(Polygone* p, ZoneDessin* z, Couleur c) {
 
 		while(!estVideListeTriee(liste)) {
 			int a = retirerListeTriee(liste), b = retirerListeTriee(liste);
-			if(b == -1)
-				bresenhamZD(z, newPoint(a, yScan), newPoint(a, yScan));
-			bresenhamZD(z, newPoint(a, yScan), newPoint(b, yScan));
+			if(b != -1)
+				bresenhamZD(z, newPoint(a, yScan), newPoint(b, yScan));
 		}
 
 	}
