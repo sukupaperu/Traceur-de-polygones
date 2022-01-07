@@ -6,22 +6,25 @@
 
 #define POLY_DISTANCE_SELECTION_MIN 500
 
+// Un élément de liste doublement chaînée
 typedef struct Sommet_t {
 	Point position;
 	struct Sommet_t* suivant;
 	struct Sommet_t* precedent;
 } Sommet;
 
+// La structure de donnée représentant un polygone
 typedef struct {
+	// Pointeurs sur la liste doublement chaînée de sommets
 	Sommet* sommetDebut;
 	Sommet* sommetFin;
-	Sommet* sommetSelectionne;
-	int nbCotes;
+	Sommet* sommetSelectionne; // sommet sélectionné à l'affichage
+	int nbCotes; // utile pour avoir un suivi du nombre d'arêtes
 	Couleur couleurRemplissage;
 	Couleur couleurTracage;
-	int estRempli;
-	int estTrace;
-	int estFerme;
+	int estRempli; // détermine si le polygone doit être rempli ou non
+	int estTrace; // détermine si le polygone doit être tracé au niveau de ses contours ou non
+	int estFerme; // détermine si le polygone tracé est fermé ou non
 } Polygone;
 
 Polygone* newPoly();
