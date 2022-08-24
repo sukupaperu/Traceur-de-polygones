@@ -268,7 +268,7 @@ int main(int argc, char **argv) {
 		glutGet(GLUT_SCREEN_HEIGHT)/2 - zDessin->hauteur/2
 	);
 	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE);
-	glutCreateWindow("Projet FAIN");
+	glutCreateWindow("Traceur de polygones");
 
 	glViewport(0, 0, zDessin->largeur, zDessin->hauteur);
 

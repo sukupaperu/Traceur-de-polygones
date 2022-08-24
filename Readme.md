@@ -1,5 +1,4 @@
-# Projet saisie et remplissage d'un polygone 2D
-### *Titouan LAURENT - M1 i3D*
+# Traceur de polygones
 ## Instructions pour compiler + exécuter le programme
 1. `make`
 2. `./projet` (*pour des redimensionner la fenêtre : `./projet <largeur> <hauteur>`*)
